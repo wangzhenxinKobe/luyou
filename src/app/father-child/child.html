@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let item of info">
-    {{item.name}}
+  <li *ngFor="let item of info;let i = index" style="list-style: none">
+    {{i+1}}-{{item.name}}
   </li>
 </ul>
